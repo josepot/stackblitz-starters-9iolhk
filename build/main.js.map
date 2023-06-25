@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/main.ts"],
+  "sourcesContent": ["import { run } from \"smoldot/worker\"\nimport { compileBytecode } from \"smoldot/bytecode\"\n\nconsole.log(\"run\", run)\nconsole.log(\"compileBytecode\", compileBytecode)\n"],
+  "mappings": ";AAAA,SAAS,WAAW;AACpB,SAAS,uBAAuB;AAEhC,QAAQ,IAAI,OAAO,GAAG;AACtB,QAAQ,IAAI,mBAAmB,eAAe;",
+  "names": []
+}

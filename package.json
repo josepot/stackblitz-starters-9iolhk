@@ -1,0 +1,23 @@
+{
+  "name": "item-items-poc",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "esbuild src/*.ts --platform=node --bundle --external:smoldot --external:smoldot/* --outdir=build --target=esnext --format=esm --sourcemap",
+    "start": "npm run build && node --enable-source-maps ./build/main.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "smoldot": "^1.0.10"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "esbuild": "^0.18.0",
+    "prettier": "^2.8.8",
+    "typescript": "^5.1.3"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "trailingComma": "all",
+    "semi": false
+  }
+}
